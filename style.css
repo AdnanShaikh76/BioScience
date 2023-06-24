@@ -150,7 +150,8 @@ ion-icon{
     display: block;
     z-index: 9;
     transform: translate(0, -50%);
-    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
 }
 .banner_slider .slick-arrow.prev{
     left: 0;
