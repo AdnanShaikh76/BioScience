@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lora&family=Playfair+Display:ital@0;1&family=Poppins&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*.container{
+    width: 100%;
+    height: 100vh;
+     background-color: black; 
+}*/
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    /* border-bottom: 2px solid #fff; */
+    padding: 5px 60px;
+    background-color: #ffffff;
+    /* filter: blur(0.2); */
+    box-shadow: -5px 19px 46px -11px rgba(0,0,0,0.8);
+    outline: none;
+    z-index: 100;
+}
+nav img{
+    /* float: left; */
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+nav .nav-links{
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    display: flex;
+    gap: 8px;
+    padding-top: -25px;
+    padding-right: 50px;
+}
+nav .nav-links a{
+    position: relative;
+    top: -55px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #21967E;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+}
+nav .nav-links a:hover{
+    background: #c3fae8;
+}
+nav .nav-links li{
+    list-style: none;
+}
+ion-icon{
+    font-size: 30px;
+}
+.nav-links li ul.dropdown li {
+    position: relative;
+    top: 50px;
+    display: block;
+    /* border-bottom: 1px dotted #000; */
+    margin-top: 5px;
+  }
+  .nav-links li ul.dropdown {
+    width: max-content;
+    background: #c3fae8;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    padding: 5px 10px;
+    display: none;
+  }
+  .dropdown li a:hover {
+    background: #a5e7d0;
+  }
+  .nav-links li:hover ul.dropdown {
+    display: block;
+  }
+.menu-btn {
+    /* float: right; */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+    color: #000;
+    z-index: 100;
+  }
+  /* jbhjhbhb */
+.banner_slider .slide{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0)), url(Media/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+.banner_slider .slide_two{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)), url(Media/Slide1.jpg);
+}.banner_slider .slide_three{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.0)), url(Media/Slide2.jpg);
+}
+.slide_content{
+    position: relative;
+    top: 80px;
+    left: 50px;
+}
+.slide_content p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #999;
+    text-transform: uppercase;
+}
+.slide_content h1{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #21967E;
+}
+.slide_content a{
+    text-decoration: none;
+    padding: 5px 20px;
+    background: #21967E;
+    position: relative;
+    top: 25px;
+    left: 0;
+    color: #c3fae8;
+    text-transform: uppercase;
+    /* border: 1px solid #999; */
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.slide_content a:hover{
+    background: #c3fae8;
+    color: #21967E;
+    border: 1px solid #21967E;
+    /* padding-right: 40px; */
+}
+.banner_slider.slick-slider{
+    margin-bottom: 0;
+}
+.banner_slider .slick-dots{
+    width: 100%;
+    bottom: 4%;
+    /* background: #c3fae8; */
+}
+.banner_slider .slick-dots li button::before{
+    font-size: 12px;
+    background: #21967E;
+    border-radius: 50%;
+}
+.banner_slider .slick-dots li{
+    margin: 0 3px;
+    /* background: #c3fae8; */
+    color: #c3fae8;
+}
+.banner_slider .slick-dots li.slick-active button::before{
+    opacity: 1;
+    background: #21967E;
+}
+.banner_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    display: block;
+    z-index: 9;
+    transform: translate(0, -50%);
+    pointer-events: none;
+    opacity: 0;
+}
+.banner_slider .slick-arrow.prev{
+    left: 0;
+}
+.banner_slider .slick-arrow.next{
+    right: 0;
+}
+.banner_slider .slick-arrow span{
+    color: #21967E;
+    font-size: 50px;
+    padding: 8px;
+}
+.slide_two .slide_content{
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 60%;
+}
+.slide_two .slide_content h1{
+    position: relative;
+    top: 80px;
+    font-size: 40px;
+    color: #21967E;
+    background: #dfdbdb;
+    width: max-content;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+.slide_two .slide_content h4{
+    font-size: 18px;
+    position: relative;
+    top: 90px;
+    color: #777;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.slide_two .slide_content p{
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    top: 120px;
+    color: #21967E;
+}
+
