@@ -41,11 +41,11 @@
                 <li>
                     <a href="#">About us</a>
                     <ul class="dropdown">
-                        <li><a href="./utilities/About.html">About Us</a></li>
-                        <li><a href="./utilities/cerfiticates.html">Legals</a></li>
-                        <li><a href="./utilities/mission-vission.html">Missions & Vision</a></li>
-                        <li><a href="./utilities/Policies.html">Policies</a></li>
-                    </ul>
+                        <li><a href="utilities/About.html" class="menu">About Us</a></li>
+                        <li><a href="utilities/cerfiticates.html"class="menu">Legals</a></li>
+                        <li><a href="utilities/mission-vission.html"class="menu">Missions & Vision</a></li>
+                        <li><a href="utilities/Policies.html"class="menu">Policies</a></li>
+                    </ul>   
                 </li>
                 <li><a href="#">Products</a>
                     <ul class="dropdown">
@@ -54,13 +54,13 @@
                     </ul>
                 </li>
                 <li><a href="#">Our Clients</a></li>
-               <li><a href="#" id="contactus">Contact us</a></li>
+               <li><a href="./utilities/contactus.html" id="contactus">Contact us</a></li>
             </ul>
         </nav>
         <section class=" banner_slider">
             <div class="slide">
                     <div class="slide_content">
-                        <p>Discovering Cures, Enhancing Lives</p>
+                        <p class="p1">Discovering Cures, Enhancing Lives</p>
                         <h1>Unilink<br>BioScience </h1>
                         <p>Your Trusted Partner In Health care</p>
                         <a href="utilities/About.html">about us</a>
@@ -73,11 +73,11 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nostrum exercitationem facere, debitis animi autem a officia fugiat eius quasi earum illo excepturi? Fuga maxime minima nulla ea molestiae quas! Repudiandae doloremque nulla nam quidem. Ratione quos eius repellat, provident dicta ipsum blanditiis? Nemo alias adipisci suscipit quam, voluptates vero!</p>
                     </div>
                 </div> 
-                <!-- <div class="slide slide_three">
+                <div class="slide slide_three">
                     <div class="slide_content">
                         
                     </div>
-                </div>  -->
+                </div> 
             </section>
     </section>
     <div class="wrapper" id="form">
@@ -140,7 +140,7 @@
 <!-- <script src="js/form.js"></script> -->
 
 <!-- Js Script For Opening & Closing Form  -->
-<script>
+<!-- <script>
     const contactus = document.getElementById('contactus');
     const form = document.getElementById('form');
     const closebtn = document.getElementById('closebtn');
@@ -151,7 +151,7 @@
     closebtn.addEventListener("click", function() {
         form.style.display = "none";
     })
-</script>
+</script> -->
 <!-- Script For SMTP Server To fetch E mails when Filled By Viewer -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
@@ -181,12 +181,12 @@
 $('.banner_slider').slick({
     dots: true,
     infinite: true,
-    arrows: true,
-    speed: 1000,
+    arrows: false,
+    speed: 2000,
     slidetoshow: 1,
     adaptiveHeight: true,
     drag: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: '<div class="slick-arrow prev"><span class="fa fa-angle-left"></span></div>',
     nextArrow: '<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>'
@@ -199,5 +199,9 @@ $('.banner_slider').slick({
         loader.style.display = "none";
     })
 </script>
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- external js -->
+<!-- <script src="/js/script..js"></script> -->
 </body>
 </html>
