@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lora&family=Playfair+Display:ital@0;1&family=Poppins&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    /* border-bottom: 2px solid #fff; */
+    padding: 5px 60px;
+    background-color: #ffffff;
+    /* filter: blur(0.2); */
+    box-shadow: -5px 19px 46px -11px rgba(0,0,0,0.2);;
+    outline: none;
+    z-index: 100;
+    
+}
+nav img{
+    /* float: left; */
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 0px;
+}
+nav .nav-links{
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    display: flex;
+    gap: 8px;
+    padding-top: -25px;
+    padding-right: 50px;
+    
+}
+nav .nav-links a{
+    position: relative;
+    top: -55px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #21967E;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-family: 'Jost', sans-serif;
+
+}
+nav .nav-links a:hover{
+    background: #c3fae8;
+}
+nav .nav-links li{
+    list-style: none;
+}
+ion-icon{
+    font-size: 30px;
+}
+.nav-links li ul.dropdown li {
+  position: relative;
+  top: 50px;
+  display: block;
+  /* border-bottom: 1px dotted #000; */
+  margin-top: 5px;
+}
+.nav-links li ul.dropdown {
+  width: max-content;
+  background: #c3fae8;
+  position: absolute;
+  top: 0px;
+  z-index: 999;
+  padding: 5px 10px;
+  display: none;
+}
+.dropdown li a:hover {
+  background: #a5e7d0;
+}
+.nav-links li:hover ul.dropdown {
+  display: block;
+}
+.menu-btn {
+    /* float: right; */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+    color: #000;
+    z-index: 100;
+  }
+  .main{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 89vh;
+    background-color: #c3fae8a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .main .mainbox{
+    width: 65%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 7px 16px 0px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 2px 7px 16px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 2px 7px 16px 0px rgba(0,0,0,0.42);
+  }
+  .main .mainbox .getintouch{
+    padding: 15px 20px;
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    width: 25vw;
+    height: 50%;
+    /* background: #000; */
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .main .mainbox .getintouch h3{
+    color: #21967E;
+  } 
+  .main .mainbox .getintouch p{
+    margin-top: 10px;
+    font-size: 0.63vw;
+    text-transform: capitalize;
+    color: #21967E;
+  }
+  .main .mainbox .getintouch .social{
+    /* max-width: 95%; */
+    /* padding: 2px 5px; */
+    color: #21967E;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-align: left;
+    max-height: fit-content;
+    margin-top: 15px;
+    text-transform: lowercase;
+    /* background-color: #a5e7d0; */
+  }
+  ion-icon {
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  .main .mainbox .formbox{
+    padding: 15px 30px;
+    z-index: 10;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 25vw;
+    height: 70%;
+    background-color: #fff;
+    box-shadow: 2px 7px 16px 0px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 2px 7px 16px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 2px 7px 16px 0px rgba(0,0,0,0.42);
+}
+.main .mainbox .formbox h3{
+      /* text-align: center; */
+    color: #21967E; 
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .main .mainbox .formbox input{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin-top: 25px;
+  }
+  .main .mainbox .formbox input:focus{
+    border-color: #21967E;
+    outline: 0;
+  }
+  .main .mainbox .formbox #submit{
+    /* display: ; */
+    /* left: 50%; */
+    background-color: #21967E;
+    outline: none;
+    border: none;
+    /* width: 75%; */
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    cursor: pointer;
+  }
+  .main .mainbox .footor{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #a5e7d0d7;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .mainbox .footor .logo{
+    padding: 10px 15px;
+    width: 25vw;
+    /* height: 12.5vw; */
+    position: absolute;
+    top: 2.7vw;
+    left: 3.5vw;
+    /* background-color: #000; */
+  }
+  .main .mainbox .footor .logo img{
+    width: 80%;
+  } 
+  .main .mainbox .footor .logo h2{
+    color: #21967E;
+  }
+  .main .mainbox .footor .social-icons{
+    position: absolute;
+    right: 95px;
+    bottom: 50px;
+    width: 20vw;
+    height: 5vw;
+    /* background-color: #000; */
+    color: #21967E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 25px; */
+    font-size: 25px;
+    cursor: pointer;
+}
+.main .mainbox .footor .social-icons ion-icon:hover{
+      transition: 0.5s ease all;
+    /* padding: 5px; */
+    color: #fff;
+  }
