@@ -120,8 +120,8 @@ ion-icon{
     position: absolute;
     left: 60px;
     top: 25px;
-    width: 25vw;
-    height: 50%;
+    width: 22vw;
+    /* height: 50%; */
     /* background: #000; */
     color: #ffffff;
     text-transform: uppercase;
@@ -142,16 +142,16 @@ ion-icon{
     white-space: nowrap;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 1vw;
     text-align: left;
     max-height: fit-content;
-    margin-top: 15px;
+    margin-top: 1vw;
     text-transform: lowercase;
     /* background-color: #a5e7d0; */
   }
   ion-icon {
-    font-size: 25px;
-    margin-right: 15px;
+    font-size: 1.5vw;
+    margin-right: 1.25vw;
   }
   .main .mainbox .formbox{
     padding: 15px 30px;
@@ -170,13 +170,13 @@ ion-icon{
       /* text-align: center; */
     color: #21967E; 
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 20px; 
   }
   .main .mainbox .formbox input{
     width: 100%;
-    height: 40px;
+    /* height: 20px; */
     padding: 5px 10px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
   .main .mainbox .formbox input:focus{
     border-color: #21967E;
@@ -192,8 +192,14 @@ ion-icon{
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
-    margin-top: 35px;
+    margin-top: 25px;
     cursor: pointer;
+  }
+  .main .mainbox .formbox #submit:hover{
+    background: #fff;
+    color: #21967E;
+    border: 1px solid #21967E;
+    transition: all 0.5s ease;
   }
   .main .mainbox .footor{
     width: 100%;
@@ -218,6 +224,7 @@ ion-icon{
     width: 80%;
   } 
   .main .mainbox .footor .logo h2{
+    font-size: 1.8vw;
     color: #21967E;
   }
   .main .mainbox .footor .social-icons{
@@ -238,5 +245,5 @@ ion-icon{
 .main .mainbox .footor .social-icons ion-icon:hover{
       transition: 0.5s ease all;
     /* padding: 5px; */
-    color: #fff;
+    color: #999;
   }
