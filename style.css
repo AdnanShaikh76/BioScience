@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lora&family=Playfair+Display:ital@0;1&family=Poppins&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+  header{
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    background-color: #ffffff;   
+    box-shadow: -5px 19px 46px -11px rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    z-index: 1000;
+  }
+  header img{
+    width: 15vw;
+  }
+  header ul{
+    position: relative;
+  }
+  header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+  }
+  header ul li a{
+    color: #21967E;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 5px; */
+  }
+  header ul li a ion-icon{
+    margin-left: 2px;
+    font-size: 20px;
+  }
+  header ul li a:hover{
+    transition: 0.2s ease;
+    background-color: #c3fae8;
+  }
+  header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 170px;
+    background-color: white;
+    display: none;
+  }
+  header ul li:hover ul{
+    display: block;
+  }
+  header ul li ul li{
+    position: relative;
+    /* padding: 5px 12px; */
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  header ul li ul li a{
+    font-size: 1em;
+    padding: 12px 10px;
+  }
+  .menubtn{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    /* background-color: #000; */
+}
+.menubtn::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #21967E;
+    transform: translateY(-12px);
+    box-shadow: 0 12px #21967E;
+}
+.menubtn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #21967E;
+    transform: translateY(12px);
+}
+header.active .menubtn::before{
+    transform: rotate(45deg);
+    box-shadow: 0 0 #21967E;
+}
+header.active .menubtn::after{
+    transform: rotate(315deg);
+    box-shadow: 0 0 #21967E;
+}
+  /* jbhjhbhb */
+
+  .socialsidefix{
+    position: fixed;
+    right: 0;
+    /* bottom: 50px; */
+    top: 50;
+    width: 100px;
+    height: 100px;
+    background: #000;
+  }
+.banner_slider .slide{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0)), url(Media/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+.banner_slider .slide_two{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)), url(Media/Slide1.jpg);
+}.banner_slider .slide_three{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.0)), url(Media/Slide2.jpg);
+}
+.slide_content{
+    position: relative;
+    top: 80px;
+    left: 50px;
+}
+.slide_content p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #999;
+    text-transform: uppercase;
+}
+.slide_content h1{
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #21967E;
+}
+.slide_content a{
+    text-decoration: none;
+    padding: 5px 20px;
+    background: #21967E;
+    position: relative;
+    top: 25px;
+    left: 0;
+    color: #c3fae8;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.slide_content a:hover{
+    background: #c3fae8;
+    color: #21967E;
+    border: 1px solid #21967E;
+}
+.banner_slider.slick-slider{
+    margin-bottom: 0;
+}
+.banner_slider .slick-dots{
+    width: 100%;
+    bottom: 4%;
+}
+.banner_slider .slick-dots li button::before{
+    font-size: 12px;
+    background: #21967E;
+    border-radius: 50%;
+}
+.banner_slider .slick-dots li{
+    margin: 0 3px;
+    color: #c3fae8;
+}
+.banner_slider .slick-dots li.slick-active button::before{
+    opacity: 1;
+    background: #21967E;
+}
+.banner_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    display: block;
+    z-index: 9;
+    transform: translate(0, -50%);
+    pointer-events: none;
+    opacity: 0;
+}
+.banner_slider .slick-arrow.prev{
+    left: 0;
+}
+.banner_slider .slick-arrow.next{
+    right: 0;
+}
+.banner_slider .slick-arrow span{
+    color: #21967E;
+    font-size: 50px;
+    padding: 8px;
+}
+.slide_two .slide_content{
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 60%;
+}
+.slide_two .slide_content h1{
+    position: relative;
+    top: 80px;
+    font-size: 40px;
+    color: #21967E;
+    background: #dfdbdb;
+    width: max-content;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+.slide_two .slide_content h4{
+    font-size: 18px;
+    position: relative;
+    top: 90px;
+    color: #777;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.slide_two .slide_content p{
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    top: 120px;
+    color: #21967E;
+}
+#loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#a5e7d0, #21967E);
+    z-index: 999;
+}
+#loader .box{
+    width: fit-content;
+    margin: 20% auto 0;
+    padding: 2px 25px;
+    font-size: 50px;
+    color: #a5e7d0;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+#loader .box span{
+    font-family: 'Jost', sans-serif;
+    display: inline-block;
+    padding: 2px;
+    transform: translateY(70px);
+    animation: moveup 2.5s linear infinite;
+}
+@keyframes moveup {
+    0%{
+        transform: translateY(70px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+   100%{
+        transform: translateY(0px);
+    }
+}
+
+#loader .box span:nth-child(2){
+    animation-delay: 0.2s;
+}
+#loader .box span:nth-child(3){
+    animation-delay: 0.3s;
+}
+#loader .box span:nth-child(4){
+    animation-delay: 0.3s;
+}
+#loader .box span:nth-child(5){
+    animation-delay: 0.4s;
+}
+#loader .box span:nth-child(6){
+    animation-delay: 0.5s;
+}
+#loader .box span:nth-child(7){
+    animation-delay: 0.6s;
+}
+#loader .box span:nth-child(8){
+    animation-delay: 0.7s;
+}
+#loader .box span:nth-child(9){
+    animation-delay: 0.8s;
+}
+#loader .box span:nth-child(10){
+    animation-delay: 0.9s;
+}
